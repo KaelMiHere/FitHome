@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Montserrat:wght@700;800;900&display=swap');
+
+body {
+  background-color: #0C0C0E;
+  color: #e4e4e7;
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.font-heading {
+  font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+.bg-brand { background-color: #FF5E1E; }
+.text-brand { color: #FF5E1E; }
+.bg-brand-hover:hover { background-color: #E04D13; }
+.card-dark {
+  background-color: #161619;
+  border: 1px solid #28282E;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.03);
+  transition: border-color .2s, transform .2s, box-shadow .2s;
+}
+.card-dark:hover {
+  border-color: #3a3a3f;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+.chat-scroll::-webkit-scrollbar { width: 6px; }
+.chat-scroll::-webkit-scrollbar-track { background: transparent; }
+.chat-scroll::-webkit-scrollbar-thumb { background: #2E2E36; border-radius: 10px; }
+.chat-scroll::-webkit-scrollbar-thumb:hover { background: #FF5E1E; }
+.glass-nav {
+  background: rgba(14,14,18,0.85);
+  backdrop-filter: blur(12px) saturate(140%);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.text-gradient {
+  background: linear-gradient(135deg, #fff 60%, #FF7A42);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
