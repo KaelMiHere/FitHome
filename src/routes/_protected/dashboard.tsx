@@ -15,11 +15,6 @@ function DashboardPage() {
     <div className="min-h-screen bg-[#0C0C0E] text-[#e4e4e7] font-sans antialiased">
       <header className="sticky top-0 z-40 glass-nav bg-[#0E0E12]/90 backdrop-blur-md border-b border-zinc-800/60 h-20 flex items-center justify-between px-6 lg:px-10">
         <Link to="/" className="font-heading text-2xl font-black tracking-wider text-white">HOME<span className="text-[#FF5E1E]">FIT</span></Link>
-        <nav className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-zinc-100 absolute left-1/2 -translate-x-1/2 items-center">
-          <Link to="/" className="hover:text-[#FF5E1E] transition-colors">Beranda</Link>
-          <span className="hover:text-[#FF5E1E] transition-colors text-xs font-bold uppercase tracking-widest text-zinc-100">Dashboard</span>
-          <Link to="/community" className="hover:text-[#FF5E1E] transition-colors">Community</Link>
-        </nav>
       </header>
 
       <main className="max-w-7xl mx-auto px-6 py-16 space-y-24">
