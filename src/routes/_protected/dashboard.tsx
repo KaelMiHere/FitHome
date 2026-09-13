@@ -12,6 +12,11 @@ function DashboardPage() {
   const [chatInput, setChatInput] = useState('')
 
   return (
+    <>
+    <style>{`
+      :root { --brand:#FF5E1E; --dark:#0C0C0E; --card:#161619; --surface:#1E1E23; --cardBorder:#28282E; }
+      body { background:#0C0C0E; color:#e4e4e7; font-family:'Inter',system-ui,sans-serif; }
+    `}</style>
     <div className="min-h-screen bg-[#0C0C0E] text-[#e4e4e7] font-sans antialiased">
       <header className="sticky top-0 z-40 glass-nav bg-[#0E0E12]/90 backdrop-blur-md border-b border-zinc-800/60 h-20 flex items-center justify-between px-6 lg:px-10">
         <Link to="/" className="font-heading text-2xl font-black tracking-wider text-white">HOME<span className="text-[#FF5E1E]">FIT</span></Link>
@@ -81,5 +86,6 @@ function DashboardPage() {
         </section>
       </main>
     </div>
+    </>
   )
 }
