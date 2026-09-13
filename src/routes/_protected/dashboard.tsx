@@ -4,72 +4,7 @@ export const Route = createFileRoute('/_protected/dashboard')({
   component: DashboardPage,
 })
 function DashboardPage() {
-  return <div dangerouslySetInnerHTML={{ __html: `<!doctype html>
-
-<html class="dark" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      @layer base {
-        html,
-        body {
-          margin: 0;
-          padding: 0;
-          background-color: #0b0d11;
-        }
-        body {
-          overscroll-behavior: none;
-          font-family: "Inter", sans-serif;
-        }
-        h1,
-        h2,
-        h3,
-        .font-heading {
-          font-family: "Plus Jakarta Sans", sans-serif;
-        }
-      }
-      ::-webkit-scrollbar {
-        display: none;
-      }
-    </style>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              bg: "#0b0d11",
-              panel: "#12151b",
-              "panel-elevated": "#171b23",
-              "panel-subtle": "#0e1116",
-              border: "#1e222a",
-              "border-light": "#292f3b",
-              accent: "#e5e7eb",
-              "accent-muted": "#10b981",
-              "accent-subtle": "#064e3b",
-            },
-          },
-        },
-      };
-    </script>
-  </head>
-  <body
-    class="bg-[#0b0d11] text-slate-200 antialiased selection:bg-slate-800 selection:text-white min-h-screen"
-  >
+  return <div dangerouslySetInnerHTML={{ __html: `
     <!-- Minimal Sleek Sidebar -->
     <aside
       class="fixed left-0 top-0 h-full w-64 bg-[#0e1116] border-r border-[#1a1e26] z-50 flex flex-col justify-between py-7 px-5"
@@ -1172,7 +1107,5 @@ function DashboardPage() {
         });
       });
     </script>
-  </body>
-</html>
-` }} />
+  ` }} />
 }
