@@ -17,7 +17,7 @@ function DashboardPage() {
         <Link to="/" className="font-heading text-2xl font-black tracking-wider text-white">HOME<span className="text-[#FF5E1E]">FIT</span></Link>
         <nav className="hidden md:flex gap-8 text-xs font-bold uppercase tracking-widest text-zinc-100 absolute left-1/2 -translate-x-1/2 items-center">
           <Link to="/" className="hover:text-[#FF5E1E] transition-colors">Beranda</Link>
-          <Link to="/dashboard" className="hover:text-[#FF5E1E] transition-colors">Dashboard</Link>
+          <span className="hover:text-[#FF5E1E] transition-colors text-xs font-bold uppercase tracking-widest text-zinc-100">Dashboard</span>
           <Link to="/community" className="hover:text-[#FF5E1E] transition-colors">Community</Link>
         </nav>
       </header>
