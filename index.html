@@ -18,6 +18,9 @@
   <body class="bg-[#f8f9fb] text-[#1a1a1a] antialiased selection:bg-brand selection:text-white">
     <header class="sticky top-0 z-40 bg-[#0E0E12]/90 backdrop-blur-md border-b border-zinc-800" data-purpose="primary-navigation">
       <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+        <button onclick="toggleMobileNav()" class="lg:hidden text-white p-2 -ml-2" aria-label="Menu">
+          <svg id="hamburger-icon" class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
         <a class="flex items-center gap-2.5 group" href="#">
           <div class="flex flex-col">
             <div class="text-2xl font-heading font-black tracking-wider text-white">
@@ -41,15 +44,24 @@
           <a class="hover:text-brand transition-colors" href="#about">About Us</a>
         </nav>
         <div class="flex items-center gap-4 ml-auto">
-          <a class="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-xs font-extrabold uppercase tracking-widest px-5 py-2.5 rounded-full border-2 border-brand transition-all hover:-translate-y-0.5" href="sign-up.html">
-            Sign Up
-          </a>
-          <a class="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white text-xs font-extrabold uppercase tracking-widest px-5 py-2.5 rounded-full shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 active:translate-y-0" href="login.html">
-            Login
-          </a>
+          <a class="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full border-2 border-brand transition-all hover:-translate-y-0.5" href="sign-up.html">Sign Up</a>
+          <a class="inline-flex items-center gap-2 bg-brand hover:bg-brand-hover text-white text-[10px] font-extrabold uppercase tracking-widest px-3 py-1.5 rounded-full shadow-lg shadow-brand/30 transition-all hover:-translate-y-0.5 active:translate-y-0" href="login.html">Login</a>
         </div>
       </div>
     </header>
+    <nav id="mobile-nav" class="lg:hidden hidden bg-[#0E0E12]/95 backdrop-blur-md border-b border-zinc-800">
+      <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-3 text-sm font-bold uppercase tracking-widest text-zinc-100">
+        <a href="#hero" onclick="toggleMobileNav()">Home</a>
+        <a href="#process" onclick="toggleMobileNav()">Our Process</a>
+        <a href="dashboard.html" onclick="toggleMobileNav()">Dashboard</a>
+        <a href="#community" onclick="toggleMobileNav()">Community</a>
+        <a href="#about" onclick="toggleMobileNav()">About Us</a>
+        <div class="flex gap-3 mt-2">
+          <a href="sign-up.html" class="bg-zinc-800 px-3 py-2 rounded-full text-xs">Sign Up</a>
+          <a href="login.html" class="bg-brand px-3 py-2 rounded-full text-xs">Login</a>
+        </div>
+      </div>
+    </nav>
     <section class="relative min-h-[70vh] md:min-h-[90vh] flex items-center justify-center text-center overflow-hidden px-4" data-purpose="hero-banner" id="hero">
       <div class="absolute inset-0 z-0">
         <img alt="Athletes training" class="w-full h-full object-cover object-center filter brightness-[0.27] contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPmrSEsfxhUE_S5aATRDfcrJ_CygQ5uIBkpFyhlle6WtbT1gQblDPqGB2NZ0LJs9RLVIP3zODVgMdjDGbFD1iVzLLbsTwrdlE0cHtoxymxZKLo7dN5Ih7qTdSMmfxuo7A7_cUtXZy8-xWZHq3cqS9KyhVLTqC2jI0hrpJl5oZU9hFZjyidnfT7LHFifboOCuft0MFOdMixqZNSTNcI8vrCgNSpV27fLWMm8JEdHNm323n_ZQ3ADl8R" />

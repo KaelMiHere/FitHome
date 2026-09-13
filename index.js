@@ -80,6 +80,10 @@ function handleSend() {
 /**
  * Basic HTML escape helper
  */
+function toggleMobileNav() {
+  const nav = document.getElementById('mobile-nav');
+  if (nav) nav.classList.toggle('hidden');
+}
 function escapeHTML(str) {
   const map = {
     '&': '&amp;',
