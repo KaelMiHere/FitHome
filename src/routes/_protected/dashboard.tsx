@@ -6,7 +6,7 @@ export const Route = createFileRoute('/_protected/dashboard')({
 function DashboardPage() {
   return <div dangerouslySetInnerHTML={{ __html: `
     <!-- Main Canvas Container -->
-    <div class="pl-64">
+    <div class="pl-0">
       <!-- Clean Minimal Header -->
       <header
         class="h-16 border-b border-[#1a1e26] bg-[#0b0d11]/85 backdrop-blur-md sticky top-0 z-40 flex items-center justify-between px-10"
